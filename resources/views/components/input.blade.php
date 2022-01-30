@@ -1,0 +1,1 @@
+<input {{ $attributes->merge(['class' => 'block w-full py-3 text-sm bg-white bg-opacity-70 dark:bg-opacity-5 rounded-[10px] pl-4 text-base text-independence dark:text-slate-300 tracking-wide outline-none']) }}>
