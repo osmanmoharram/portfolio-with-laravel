@@ -20,9 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <!-- Link Swiper's CSS -->
 
     <!-- Scripts -->
     <script>

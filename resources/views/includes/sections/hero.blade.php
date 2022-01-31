@@ -17,6 +17,9 @@
                     </a>
                 </div>
             </div>
+
+
+            <img class="w-7/12 max-w-xs absolute -bottom-24 right-2 sm:hidden" src="{{ asset('img/svg/coder.svg') }}" alt="">
         </div>
 
         <div class="hidden sm:flex flex-col items-center justify-center col-span-1 relative">

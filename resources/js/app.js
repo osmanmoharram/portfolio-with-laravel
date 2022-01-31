@@ -2,13 +2,16 @@ require('./bootstrap');
 
 import Alpine from 'alpinejs'
 import axios from 'axios';
+import Swiper, { Navigation, Pagination } from 'swiper';
+
+import '../../node_modules/swiper/swiper-bundle.min.css';
 
 window.Alpine = Alpine
 
 Alpine.start()
 
 onbeforeunload = () => {
-    if(document.getElementById('sender') !== undefined) {
+    if (document.getElementById('sender') !== undefined) {
         console.log('here');
         document.getElementById('sender').value = '';
         document.getElementById('email').value = '';
@@ -60,19 +63,19 @@ Alpine.store('formSubmit', {
 Alpine.store('theme', {
     set(mode) {
         // Whenever the user explicitly chooses light mode
-        if(mode === 'light') {
+        if (mode === 'light') {
             localStorage.theme = 'light';
             window.updateTheme();
         }
 
         // Whenever the user explicitly chooses dark mode
-        if(mode === 'dark') {
+        if (mode === 'dark') {
             localStorage.theme = 'dark';
             window.updateTheme();
         }
 
         // Whenever the user explicitly chooses to respect the OS preference
-        if(mode === 'system') {
+        if (mode === 'system') {
             localStorage.removeItem('theme');
             window.updateTheme();
         }
@@ -83,13 +86,28 @@ Alpine.store('theme', {
 Swiper.use([Navigation, Pagination]);
 
 // init Swiper:
-const mySwiper = new Swiper('.my-swiper', {
+const meSwiper = new Swiper('.me-swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    autoplay: {
-        delay: 2000
-    }
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+
 });
 
 const swiper = new Swiper('.swiper', {
@@ -114,13 +132,3 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-scrollbar',
     },
 });
-
-/**
- * Carousel with Swiperjs
- */
-// core version + navigation, pagination modules:
-import Swiper, { Navigation, Pagination } from 'swiper';
-// import Swiper and modules styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';

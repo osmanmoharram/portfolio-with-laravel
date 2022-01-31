@@ -37,6 +37,16 @@
                             <img src="{{ asset('img/about/me3.jpg') }}" alt="Me3" class="rounded-[18px]">
                         </div>
                     </div>
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
                 </div>
             </div>
         </div>
