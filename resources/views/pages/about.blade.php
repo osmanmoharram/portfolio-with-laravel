@@ -1,26 +1,31 @@
 <x-app-layout> <!-- 731 pixels -->
-    <x-slot name="title">About</x-slot>
+    <x-slot name="title">Osman Moharram - About</x-slot>
  {{-- //sm:h-[581px] --}}
     <div class="px-6 py-16 max-w-7xl mx-auto">
         <div class=" flex flex-col justify-between space-y-8  sm:flex-row sm:items-start sm:space-x-2 md:justify-center md:space-y-0 lg:space-x-48">
             <div class="max-w-md flex flex-col items-start space-y-12">
                 <div class="tracking-wide text-independence dark:text-slate-300 text-opacity-60 space-y-4">
-                    <p class="ml-1 text-xl">Hello, I am</p>
+                    <p class="ml-1 text-base font-light">Hello, I am</p>
                     <h1 class="text-5xl lg:text-7xl text-deep-champagne font-black uppercase">
                         Osman Moharram
                     </h1>
-                    <p class="text-sm font-normal">
-                        Web Developer &bullet; UI/UX Designer &bullet; Real Madrid FC Fan
+                    <p class="text-base font-light">
+                        Web Developer &bullet; Movies Enthusiast &bullet; Real Madrid FC Fan
                     </p>
                 </div>
-                <div class="flex items-center justify-center  space-x-4">
-                    <a href="/#reachMe" class="px-4 py-2 rounded-[10px] bg-deep-champagne hover:bg-deep-champagne hover:bg-opacity-80 text-white transition duration-100 ease-linear" title="Go to reach me form">Reach Me</a>
-                    <a href="/about/download" class="px-4 py-2 rounded-[10px] border border-independence hover:bg-independence text-independence hover:text-white transition duration-100 ease-linear" title="download resume" target="_blank">Resume</a>
+                <div class="flex items-center justify-center">
+                    <a
+                        href="/about/download"
+                        class="inline-block cursor-pointer w-28 py-3 rounded-[10px] text-center tracking-wide bg-deep-champagne hover:bg-deep-champagne/80 text-white dark:text-slate-50 dark:hover:bg-deep-champagne-lighter transition duration-100 ease-linear"
+                        title="Go to projects section"
+                    >
+                        Resume
+                    </a>
                 </div>
             </div>
 
-            <div class="relative flex items-center justify-end">
-                <div class="swiper mySwiper w-[312px] h-[320px]">
+            <div class="relative flex items-center justify-end drop-shadow-2xl">
+                <div class="swiper my-swiper w-[312px] h-[320px]">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide flex justify-center items-center">
                             <img src="{{ asset('img/about/me1.jpg') }}" alt="Me1" class="rounded-[18px]">

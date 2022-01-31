@@ -53,7 +53,9 @@
                     </div>
                     <div>
                         <x-label for="body" value="Message" />
-                        <textarea class="w-full h-52 rounded-[10px] bg-white bg-opacity-70 dark:bg-opacity-5 pt-4 pl-4 text-sm text-independence dark:text-slate-300 tracking-wide outline-none resize-none" name="body" id="body"></textarea>
+                        <textarea class="w-full h-52 rounded-[10px] bg-white bg-opacity-70 dark:bg-opacity-5 pt-4 pl-4 text-sm text-independence dark:text-slate-300 tracking-wide outline-none resize-none"
+                                    name="body"
+                                    id="body"></textarea>
                         <p id="bodyError" class="text-sm text-red-500 mt-1 ml-1"></p>
                     </div>
                 </div>
@@ -69,7 +71,7 @@
                         </div>
                     </div>
                     <div class="col-span-1 flex justify-end">
-                        <button type="submit" @click.prevent="$store.formSubmit.submit()"class="px-8 py-2 rounded-[10px] text-right bg-independence hover:bg-independence-lighter dark:hover:bg-independence-lighter  text-white transition duration-100 ease-linear" title="Send your message">
+                        <button type="submit" @click.prevent="$store.formSubmit.submit()"class="px-8 py-3 rounded-[10px] text-right bg-independence hover:bg-independence-lighter dark:hover:bg-independence-lighter  text-white transition duration-100 ease-linear" title="Send your message">
                             <span>Send</span>
                         </button>
                     </div>

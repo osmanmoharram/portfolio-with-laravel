@@ -1,16 +1,6 @@
 <nav>
     <div>
-        <ul class="flex items-center space-x-6 text-sm text-independence text-opacity-80 dark:text-slate-400 dark:text-opacity-60">
-            <li>
-                <a href="/" class="block rounded-[10px] cursor-pointer hover:text-deep-champagne-lighter transition duration-100 ease-linear" title="Home page">
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href="/about" class="block rounded-[10px] cursor-pointer hover:text-deep-champagne-lighter transition duration-100 ease-linear" title="About page">
-                    About
-                </a>
-            </li>
+        <ul class="flex items-center space-x-4 sm:space-x-8 md:space-x-12 text-xs sm:text-sm text-independence/70 text-opacity-80 dark:text-slate-400 dark:text-opacity-60">
             <li x-data="{ visible: false }" class="relative">
                 <button type="button" id="selected" x-ref="selectedOption" @click="visible = ! visible" class="relative cursor-pointer text-deep-champagne dark:text-opacity-80"
                     aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label" title="Theme mode"
@@ -72,6 +62,24 @@
                         </span>
                     </li>
                 </ul>
+            </li>
+            <li class="flex items-center space-x-2 sm:space-x-4 md:space-x-6">
+                <a href="/" class="block rounded-[10px] cursor-pointer hover:text-deep-champagne-lighter transition duration-100 ease-linear" title="Home page">
+                    Home
+                </a>
+
+                <a href="/about" class="block rounded-[10px] cursor-pointer hover:text-deep-champagne-lighter transition duration-100 ease-linear" title="About page">
+                    About
+                </a>
+            </li>
+            <li>
+                <a
+                    href="/#reachMe"
+                    class="inline-block cursor-pointer border border-deep-champagne w-20 sm:w-28 py-3 rounded-[10px] text-center text-deep-champagne-darker tracking-wide hover:shadow-sm hover:bg-deep-champagne/5 hover:dark:bg-deep-champagne hover:dark:text-white transition duration-200 ease-linear"
+                    title="Go to reach me form"
+                >
+                    Reach Me
+                </a>
             </li>
         </ul>
     </div>

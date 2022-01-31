@@ -2,12 +2,20 @@ require('./bootstrap');
 
 import Alpine from 'alpinejs'
 import axios from 'axios';
-
+/**
+ * Carousel with Swiperjs
+ */
+// core version + navigation, pagination modules:
+import Swiper, { Navigation, Pagination } from 'swiper';
+// import Swiper and modules styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 window.Alpine = Alpine
 
 Alpine.start()
 
-window.onbeforeunload = () => {
+document.onload = () => {
     document.getElementById('sender').value = '';
     document.getElementById('email').value = '';
     document.getElementById('body').value = '';
@@ -69,5 +77,41 @@ Alpine.store('theme', {
             localStorage.removeItem('theme');
             window.updateTheme();
         }
+    },
+});
+
+// configure Swiper to use modules
+Swiper.use([Navigation, Pagination]);
+
+// init Swiper:
+const mySwiper = new Swiper('.my-swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    autoplay: {
+        delay: 2000
+    }
+});
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
     },
 });
