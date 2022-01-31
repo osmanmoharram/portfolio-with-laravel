@@ -2,23 +2,18 @@ require('./bootstrap');
 
 import Alpine from 'alpinejs'
 import axios from 'axios';
-/**
- * Carousel with Swiperjs
- */
-// core version + navigation, pagination modules:
-import Swiper, { Navigation, Pagination } from 'swiper';
-// import Swiper and modules styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+
 window.Alpine = Alpine
 
 Alpine.start()
 
-document.onload = () => {
-    document.getElementById('sender').value = '';
-    document.getElementById('email').value = '';
-    document.getElementById('body').value = '';
+onbeforeunload = () => {
+    if(document.getElementById('sender') !== undefined) {
+        console.log('here');
+        document.getElementById('sender').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('body').value = '';
+    }
 };
 
 //Reach Me Form
@@ -31,7 +26,7 @@ Alpine.store('formSubmit', {
             'email': email.value,
             'body': body.value
         }).then((response) => {
-            console.log( response.data);
+            document.getElementById('preloader').style.display = 'none';
             document.getElementById('feedback').style.display = 'flex';
 
             sender.value = '';
@@ -39,6 +34,8 @@ Alpine.store('formSubmit', {
             body.value = '';
 
         }).catch((errors) => {
+            document.getElementById('preloader').style.display = 'none';
+
             if (errors.response.data.errors.sender !== undefined) {
                 sender.classList.add('border', 'border-red-500')
                 senderError.innerHTML = errors.response.data.errors.sender[0];
@@ -54,6 +51,8 @@ Alpine.store('formSubmit', {
                 bodyError.innerHTML = errors.response.data.errors.body[0];
             }
         });
+
+        document.getElementById('preloader').style.display = 'flex';
     }
 });
 
@@ -115,3 +114,13 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-scrollbar',
     },
 });
+
+/**
+ * Carousel with Swiperjs
+ */
+// core version + navigation, pagination modules:
+import Swiper, { Navigation, Pagination } from 'swiper';
+// import Swiper and modules styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';

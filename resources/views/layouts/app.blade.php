@@ -63,6 +63,7 @@
 </head>
 
 <body class="bg-white font-roboto text-slate-300 text-base font-medium tracking-wide dark:bg-slate-900 dark:text-slate-400">
+
     <header class="flex justify-between items-center max-w-7xl mx-auto py-8 px-5">
         <x-logo />
 
@@ -72,6 +73,7 @@
     <main>
         {{ $slot }}
     </main>
+
     <!-- App.js -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 </body>

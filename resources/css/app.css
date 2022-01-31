@@ -50,4 +50,10 @@
     .projects {
         @apply grid grid-flow-col grid-rows-2 grid-cols-3 sm:gap-x-8;
     }
+
+    .center-loader {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 }

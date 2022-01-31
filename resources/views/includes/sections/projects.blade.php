@@ -72,7 +72,7 @@
             <div class="col-start-2 row-start-2">
                 <div class="max-w-lg mx-auto transform rotate-12 translate-y-40 rounded-[10px] sm:max-w-full sm:translate-x-44 sm:scale-110 lg:translate-x-64">
                     <img
-                        src="{{ asset('img/projects/doquot/index.PNG') }}"
+                        src="{{ asset('img/projects/doquot/index.png') }}"
                         alt="Doquot"
                         @click="doquotOpen = true; document.querySelector('body').style.overflow = 'hidden';"
                         class="rounded-[10px]  lg:blur-sm hover:blur-0 cursor-pointer transition duration-100 ease-linear"
