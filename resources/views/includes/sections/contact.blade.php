@@ -71,7 +71,7 @@
                         </div>
                     </div>
                     <div class="col-span-1 flex justify-end">
-                        <button type="submit" @click.prevent="$store.formSubmit.submit()"class="px-8 py-3 rounded-[10px] text-right bg-independence hover:bg-independence-lighter dark:hover:bg-independence-lighter  text-white transition duration-100 ease-linear" title="Send your message">
+                        <button type="submit" @click.prevent="$store.formSubmit.submit()"class="px-8 py-3 rounded-[10px] text-right bg-independence hover:bg-independence-lighter text-white transition duration-100 ease-linear" title="Send your message">
                             <span>Send</span>
                         </button>
                     </div>

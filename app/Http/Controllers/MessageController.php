@@ -2,10 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\ReachMeMessage;
 use App\Models\Message;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
 
 class MessageController extends Controller
 {
@@ -19,13 +17,6 @@ class MessageController extends Controller
 
         $message = Message::create($validated);
 
-        $this->sendMessageToMe($message);
-
         return response()->json([], 200);
-    }
-
-    protected function sendMessageToMe(Message $message)
-    {
-        Mail::to('o.moharram91@gmail.com')->send(new ReachMeMessage($message));
     }
 }

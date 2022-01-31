@@ -16,7 +16,7 @@
                 <div class="flex items-center justify-center">
                     <a
                         href="/about/download"
-                        class="inline-block cursor-pointer w-28 py-3 rounded-[10px] text-center tracking-wide bg-deep-champagne hover:bg-deep-champagne/80 text-white dark:text-slate-50 dark:hover:bg-deep-champagne-lighter transition duration-100 ease-linear"
+                        class="inline-block cursor-pointer w-28 py-3 rounded-[10px] text-center tracking-wide bg-deep-champagne hover:bg-deep-champagne-lighter text-independence transition duration-100 ease-linear"
                         title="Go to projects section"
                     >
                         Resume

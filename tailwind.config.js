@@ -11,13 +11,13 @@ module.exports = {
             colors: {
                 'deep-champagne-lightest': '#FEF2DF',
                 'deep-champagne-light': '#FDECCE',
-                'deep-champagne-lighter': '#FBD696',
+                'deep-champagne-lighter': '#FCDFAE',
                 'deep-champagne': '#FBD38D',
                 'deep-champagne-darker': '#FAC873',
                 'deep-champagne-dark': '#F8B33D',
                 'deep-champagne-darkest': '#D98C08',
                 'independence-lightest': '#E1E1EA',
-                'independence-lighter': '#615E84',
+                'independence-lighter': '#4B4866',
                 'independence-light': '#9895B4',
                 'independence': '#3F3D56',
                 'independence-darker': '#3B3950'
