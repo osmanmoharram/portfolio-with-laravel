@@ -1,4 +1,4 @@
-<section class="pt-40 bg-gradient-to-b dark:bg-gradient-to-b from-white dark:from-slate-900 via-white dark:via-slate-900 to-slate-50 dark:to-slate-900">
+<section class="pt-28 bg-gradient-to-b dark:bg-gradient-to-b from-white dark:from-slate-900 via-white dark:via-slate-900 to-slate-50 dark:to-slate-900">
     <div class="max-w-7xl mx-auto px-6">
         <!-- Title -->
         <div>
@@ -11,7 +11,7 @@
                     Services
                 </h2>
             </div>
-            <p class="my-3 font-bold text-4xl text-independence dark:text-slate-300 tracking-wide">
+            <p class="my-3 font-black text-4xl md:text-5xl text-independence dark:text-slate-300 tracking-wide">
                 At your service
             </p>
             <p class="text-slate-400 max-w-2xl text-lg tracking-wide">

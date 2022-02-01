@@ -1,6 +1,6 @@
 <section class="px-6">
-    <div class="max-w-7xl mx-auto grid grid-cols-2 h-[500px] shadow-sm dark:border-none bg-slate-50 dark:bg-slate-800 dark:bg-opacity-50 rounded-[10px]">
-        <div class="relative col-span-2 pl-8 md:pl-16 sm:col-span-1 flex items-center md:justify-center">
+    <div class="relative max-w-7xl mx-auto grid grid-cols-2 h-[500px] shadow-sm dark:border-none bg-slate-50 dark:bg-slate-800 dark:bg-opacity-50 rounded-[10px]">
+        <div class="col-span-2 pl-8 md:pl-16 sm:col-span-1 flex items-center md:justify-center">
             <div class="space-y-12">
                 <h1 class="text-slate-300 text-opacity-80 text-6xl max-w-md md:text-7xl font-black leading-none dark:text-slate-700">
                     <span class="text-shadow-xs dark:text-shadow-xs-dark">I am a </span>
@@ -19,16 +19,16 @@
             </div>
 
 
-            <img class="w-7/12 max-w-xs absolute -bottom-24 right-2 sm:hidden" src="{{ asset('img/svg/coder.svg') }}" alt="">
+            <img class="w-64 absolute -bottom-24 right-3.5 sm:w-80 md:w-96 lg:hidden" src="{{ asset('img/svg/coder2.svg') }}" alt="">
         </div>
 
-        <div class="hidden sm:flex flex-col items-center justify-center col-span-1 relative">
-            <img class="w-11/12 max-w-sm" src="{{ asset('img/svg/coder.svg') }}" alt="Image">
-            <img
+        <div class="hidden lg:flex flex-col items-center justify-center col-span-1 relative">
+            <img class="absolute -left-32 -bottom-32 w-full" src="{{ asset('img/svg/coder.svg') }}" alt="Image">
+            {{-- <img
                 class="sm:w-[120%] sm:right-[15%] md:w-96 md:-left-1/2  lg:w-[100%] lg:-bottom-40 max-w-xl absolute -bottom-24"
                 src="{{ asset('img/svg/code-thinking.svg') }}"
                 alt="Image"
-            >
+            > --}}
         </div>
     </div>
 </section>

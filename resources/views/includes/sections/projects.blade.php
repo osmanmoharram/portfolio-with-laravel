@@ -11,7 +11,7 @@
                     Projects
                 </h2>
             </div>
-            <p class="my-3 font-black text-4xl text-independence dark:text-slate-300">
+            <p class="my-3 font-black text-4xl md:text-5xl text-independence dark:text-slate-300">
                 Have a look at some of my work
             </p>
             <p class="text-slate-400 max-w-2xl text-lg tracking-wide">

@@ -63,7 +63,7 @@
                         Skills
                     </h2>
                 </div>
-                <p class="my-3 font-bold text-4xl text-independence dark:text-slate-300 tracking-wide">
+                <p class="my-3 font-black text-4xl md:text-5xl text-independence dark:text-slate-300 tracking-wide">
                     Tools of the trade.
                 </p>
                 <p class="text-slate-400 max-w-2xl text-lg tracking-wide">

@@ -3,7 +3,7 @@
 
         <!-- First Column -->
         <div class="row-span-1 md:pr-8 relative">
-            <h2 class="text-independence dark:text-slate-300 text-4xl font-black">
+            <h2 class="text-independence dark:text-slate-300 text-4xl sm:text-5xl font-black">
                 Reach Me
             </h2>
             <p class="max-w-xl text-lg pt-4 text-independence dark:text-slate-400 text-opacity-50 tracking-wide">
