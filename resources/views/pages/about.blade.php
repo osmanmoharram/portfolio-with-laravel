@@ -3,7 +3,7 @@
  {{-- //sm:h-[581px] --}}
     <div class="px-6 py-16 max-w-7xl mx-auto">
         <div class=" flex flex-col justify-between space-y-8  sm:flex-row sm:items-start sm:space-x-2 md:justify-center md:space-y-0 lg:space-x-48">
-            <div class="max-w-md flex flex-col items-start space-y-12">
+            <div class="max-w-md flex flex-col items-start space-y-6">
                 <div class="tracking-wide text-independence dark:text-slate-300 text-opacity-60 space-y-4">
                     <p class="ml-1 text-base font-light">Hello, I am</p>
                     <h1 class="text-5xl lg:text-7xl text-deep-champagne font-black uppercase">
@@ -13,16 +13,23 @@
                         Web Developer &bullet; Movies Enthusiast &bullet; Real Madrid FC Fan
                     </p>
                 </div>
-                <div class="flex items-center justify-center">
-                    <a
-                        href="/about/download"
-                        class="inline-block cursor-pointer w-28 py-3 rounded-[10px] text-center tracking-wide bg-deep-champagne hover:bg-deep-champagne-lighter text-independence transition duration-100 ease-linear"
-                        target="_blank"
-                        title="Go to projects section"
-                    >
-                        Resume
-                    </a>
-                </div>
+                <ul class="flex items-center justify-center space-x-1">
+                    <li>
+                        <a href="https://www.facebook.com/omoharram" target="_blank">
+                            <img src="{{ asset('img/social media/facebook.svg') }}" alt="Facebook" class="w-8 h-8">
+                        </a>
+                    </li>
+                    <li class="dark:invert">
+                        <a href="https://github.com/osmanmoharram" target="_blank">
+                            <img src="{{ asset('img/social media/github.svg') }}" alt="Github" class="w-8 h-8">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/osman-moharram-03a165115/" target="_blank">
+                            <img src="{{ asset('img/social media/linkedin.svg') }}" alt="LinkedIn" class="w-8 h-8">
+                        </a>
+                    </li>
+                </ul>
             </div>
 
             <div class="relative flex items-center justify-end">
