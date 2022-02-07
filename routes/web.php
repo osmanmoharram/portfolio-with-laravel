@@ -22,4 +22,4 @@ Route::post('/', [MessageController::class, 'store']);
 
 Route::get('/about', fn() => view('pages.about') );
 
-Route::get('/about/download', fn() => Response::download(public_path('osman-moharram-cv.pdf', 'Osman Resume')));
+Route::get('/about/download', fn() => Response::download(public_path('osmanmoharram-cv.pdf', 'Osman Resume')));
