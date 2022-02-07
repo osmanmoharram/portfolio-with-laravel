@@ -33,11 +33,6 @@
 
         <div class="hidden lg:flex flex-col items-center justify-center col-span-1 relative">
             <img class="absolute -left-32 -bottom-32 w-full" src="{{ asset('img/svg/coder.svg') }}" alt="Image">
-            {{-- <img
-                class="sm:w-[120%] sm:right-[15%] md:w-96 md:-left-1/2  lg:w-[100%] lg:-bottom-40 max-w-xl absolute -bottom-24"
-                src="{{ asset('img/svg/code-thinking.svg') }}"
-                alt="Image"
-            > --}}
         </div>
     </div>
 </section>
