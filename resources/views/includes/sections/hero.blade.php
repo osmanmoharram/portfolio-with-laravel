@@ -18,7 +18,7 @@
 
                     <a
                         href="/about/download"
-                        class="inline-block cursor-pointer w-28 py-3 rounded-[10px] text-center tracking-wide border-2 border-slate-400 hover:bg-slate-400 text-slate-400 hover:text-white dark:text-slate-600 dark:hover:text-white dark:border-slate-700 dark:hover:bg-slate-700 transition duration-100 ease-linear"
+                        class="inline-block cursor-pointer w-28 py-3 rounded-[10px] text-center tracking-wide border-2 border-slate-300 hover:bg-slate-300 text-slate-400 hover:text-white dark:text-slate-600 dark:hover:text-white dark:border-slate-700 dark:hover:bg-slate-700 transition duration-100 ease-linear"
                         target="_blank"
                         title="Go to projects section"
                     >
